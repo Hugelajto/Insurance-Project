@@ -1,0 +1,106 @@
+.C-nav-container {
+  height: 18vh;
+
+  .C-nav-title {
+    font-family: "Fira Sans";
+    font-weight: 700;
+    font-size: 1rem;
+    color: #a9a19e;
+    position: relative;
+
+    .C-home {
+      width: 3em;
+      position: absolute;
+      padding: 2em 6em;
+      top: 0;
+      right: 13em;
+    }
+    .C-our-offer {
+      width: 7em;
+      position: absolute;
+      padding: 2em 3em;
+      top: 0;
+      left: 13.5em;
+    }
+    .C-why-us {
+      position: absolute;
+      width: 7em;
+      padding: 2em 4em;
+      bottom: -9.2em;
+      right: 13em;
+    }
+
+    .C-contact {
+      position: absolute;
+      width: 7em;
+      padding: 2em 3em;
+      bottom: -9.2em;
+      left: 13.5em;
+    }
+
+    ul {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      display: block;
+      text-align: center;
+      margin-top: 0;
+      color: #a9a19e;
+      text-decoration: none;
+      background-color: white;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      color: black;
+      background-color: rgba(211, 211, 211, 0.315);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .C-nav-container {
+    height: 9.1vh;
+    .C-nav-title {
+      .C-home {
+        width: 10em;
+        position: absolute;
+        padding: 2em 5em;
+        top: 0;
+        right: 87em;
+      }
+      .C-our-offer {
+        width: 10em;
+        position: absolute;
+        padding: 2em 5em;
+        top: -0em;
+        left: 35em;
+      }
+      .C-why-us {
+        position: absolute;
+        width: 10em;
+        padding: 2em 5em;
+        bottom: -5.2em;
+        left: 60em;
+      }
+
+      .C-contact {
+        position: absolute;
+        width: 10em;
+        padding: 2em 5em;
+        bottom: -5.2em;
+        left: 85em;
+      }
+    }
+  }
+}

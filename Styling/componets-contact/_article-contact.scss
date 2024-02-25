@@ -1,0 +1,24 @@
+.C-article-container {
+  padding: 3em 2em 0 2em;
+  height: 86vh;
+
+  .C-article-title {
+    font-family: "frank ruhl libre";
+    font-size: 4em;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .C-article-container {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    padding: 8em 15em 0em 15em;
+
+    .C-article-title {
+      font-size: 5rem;
+      padding-right: 3em;
+    }
+  }
+}

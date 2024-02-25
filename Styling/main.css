@@ -1,0 +1,888 @@
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90vh;
+  background-color: #c7ddea;
+}
+.header-container .header-title {
+  padding: 1.5em 2em 0 0.5em;
+  font-family: "frank ruhl libre", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.header-container .header-param {
+  padding: 1.5em 1.5em 0 1em;
+  color: rgb(84, 84, 84);
+  font-size: 1rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+.header-container .button {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 3%;
+  height: 3em;
+  width: 8.5em;
+  border-radius: 20em;
+  box-shadow: 0 1px 1px rgba(66, 64, 64, 0.5);
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.header-container .button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+.header-container .button a {
+  text-decoration: none;
+  padding: 0em 0 0 4em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  transition: color 0.3s ease;
+}
+.header-container .button a:hover {
+  color: white;
+}
+.header-container .white {
+  color: white;
+}
+.header-container .header-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-container {
+    position: relative;
+    height: 71.5vh;
+    width: 50%;
+  }
+  .header-container .header-title {
+    padding-left: 2em;
+    font-size: 3rem;
+  }
+  .header-container .header-param {
+    position: absolute;
+    top: 24.2%;
+    padding: 0 16em 1em 6em;
+  }
+  .header-container .button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 27%;
+    left: 6%;
+    height: 3em;
+    width: 8.5em;
+    border-radius: 20em;
+  }
+  .header-container .button a {
+    padding: 0em 2em 0em 4em;
+    font-size: 0.7rem;
+  }
+  .header-container .header-img {
+    position: absolute;
+    top: 37.5%;
+    left: 50%;
+    width: 45%;
+    padding: 0;
+  }
+}
+.aside-container {
+  width: 100%;
+}
+.aside-container .aside-top {
+  height: 40vh;
+  background-color: #f17949;
+}
+.aside-container .aside-bottom {
+  height: 40vh;
+  background-color: #fab131;
+}
+.aside-container .aside-param {
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  font-size: 0.8rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(84, 84, 84);
+}
+.aside-container .aside-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .aside-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+  }
+  .aside-container .aside-top,
+  .aside-container .aside-bottom {
+    height: 35.75vh;
+  }
+}
+.nav-container {
+  width: 100%;
+  height: 20vh;
+}
+.nav-container .nav-title {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #a9a19e;
+  position: relative;
+}
+.nav-container .nav-title .home {
+  width: 3em;
+  position: absolute;
+  padding: 2em 6em;
+  top: 0;
+  right: 13em;
+}
+.nav-container .nav-title .our-offer {
+  width: 7em;
+  position: absolute;
+  padding: 2em 3em;
+  top: 0;
+  left: 13.5em;
+}
+.nav-container .nav-title .why-us {
+  position: absolute;
+  width: 7em;
+  padding: 2em 4em;
+  bottom: -10.3em;
+  right: 13em;
+}
+.nav-container .nav-title .contact {
+  position: absolute;
+  width: 7em;
+  padding: 2em 3em;
+  bottom: -10.3em;
+  left: 13.5em;
+}
+.nav-container .nav-title ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-container .nav-title li {
+  display: inline-block;
+}
+.nav-container .nav-title a {
+  display: inline-block;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  color: #a9a19e;
+  text-decoration: none;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+.nav-container .nav-title a:hover {
+  color: black;
+  background-color: rgba(211, 211, 211, 0.315);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-container {
+    height: 9vh;
+  }
+  .nav-container .nav-title .home {
+    width: 20em;
+    position: absolute;
+    padding: 2em 5em;
+    top: 0;
+    right: 89.4em;
+  }
+  .nav-container .nav-title .our-offer {
+    width: 20em;
+    position: absolute;
+    padding: 2em 5em;
+    top: 0em;
+    left: 29.5em;
+  }
+  .nav-container .nav-title .why-us {
+    position: absolute;
+    width: 20.1em;
+    padding: 2em 5em;
+    bottom: -5.2em;
+    left: 59.5em;
+  }
+  .nav-container .nav-title .contact {
+    position: absolute;
+    width: 19.3em;
+    padding: 2em 5em;
+    bottom: -5.2em;
+    left: 89.65em;
+  }
+}
+.main-container {
+  background-color: #a9a19e;
+}
+
+.article-container {
+  padding: 1em;
+}
+.article-container .article-title {
+  padding-top: 4em;
+  font-family: "frank ruhl libre", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+}
+.article-container .button-title {
+  display: none;
+}
+.article-container .button-title .button {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 3%;
+  height: 3em;
+  width: 8.5em;
+  border-radius: 20em;
+  box-shadow: 0 1px 1px rgba(66, 64, 64, 0.5);
+  background-color: white;
+}
+.article-container .button-title .button a {
+  display: none;
+  text-decoration: none;
+  padding: 0em 0 0 4em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+.article-container .btn-title {
+  display: none;
+}
+.article-container .article-param {
+  padding-top: 1rem;
+  font-family: "Fira Sans";
+  font-size: 1.4rem;
+  color: #343a40;
+}
+
+@media screen and (min-width: 1024px) {
+  .article-container {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    padding: 2em 17em 0em 17em;
+    height: 80vh;
+  }
+  .article-container .article-title {
+    font-size: 3rem;
+    width: 100em;
+    padding-right: 5em;
+  }
+  .article-container .button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 0;
+    height: 3em;
+    width: 8.5em;
+    border-radius: 20em;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.678);
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+  .article-container .button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.678);
+  }
+  .article-container .button a {
+    text-decoration: none;
+    padding: 0 0 0 2.5em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    transition: color 0.3s ease;
+  }
+  .article-container .button a:hover {
+    color: white;
+  }
+  .article-container .button .btn-title {
+    display: block;
+  }
+  .article-container .article-param {
+    font-size: 1.5rem;
+  }
+}
+.figure-container {
+  margin-top: 18em;
+  padding-left: 2em;
+  padding-right: 2em;
+  gap: 5rem;
+}
+.figure-container .figure-title {
+  padding-top: 9em;
+  display: flex;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+}
+.figure-container .figure-param {
+  padding: 1em;
+  text-align: center;
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #343a40;
+}
+.figure-container .child-box {
+  margin-top: 6em;
+  height: 50%;
+  border-radius: 0.8em;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 5px rgba(46, 45, 45, 0.5);
+}
+.figure-container .child-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2.5em;
+  left: 1.2em;
+  width: 90%;
+  height: 65%;
+  background-image: url(../assets/child.png);
+  background-size: 40%;
+  background-position: 110px 30px;
+  background-repeat: no-repeat;
+  border-radius: 0.8em;
+  background-color: #c7ddea;
+}
+.figure-container .adult-box {
+  margin-top: 6em;
+  height: 50%;
+  border-radius: 0.8em;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 5px rgba(46, 45, 45, 0.5);
+}
+.figure-container .adult-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2.5em;
+  left: 1.2em;
+  width: 90%;
+  height: 65%;
+  background-image: url(../assets/adult.png);
+  background-size: 40%;
+  background-position: 100px 30px;
+  background-repeat: no-repeat;
+  border-radius: 0.8em;
+  background-color: #fab131;
+}
+.figure-container .old-box {
+  margin-top: 6em;
+  height: 50%;
+  border-radius: 0.8em;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 5px rgba(46, 45, 45, 0.5);
+}
+.figure-container .old-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -2.5em;
+  left: 1.2em;
+  width: 90%;
+  height: 65%;
+  background-image: url(../assets/old.png);
+  background-size: 65%;
+  background-position: 70px 30px;
+  background-repeat: no-repeat;
+  border-radius: 0.8em;
+  background-color: #f17949;
+}
+
+@media screen and (min-width: 1024px) {
+  .figure-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .figure-container .figure-title {
+    padding-top: 10em;
+  }
+  .figure-container .child-box {
+    top: -350px;
+    height: 55vh;
+    width: 20%;
+  }
+  .figure-container .child-box::before {
+    content: "";
+    height: 50%;
+    background-size: 55%;
+    background-position: 80px 30px;
+  }
+  .figure-container .adult-box {
+    top: -350px;
+    height: 55vh;
+    width: 20%;
+  }
+  .figure-container .adult-box::before {
+    content: "";
+    height: 50%;
+    background-size: 45%;
+    background-position: 80px 30px;
+  }
+  .figure-container .old-box {
+    top: -350px;
+    height: 55vh;
+    width: 20%;
+  }
+  .figure-container .old-box::before {
+    content: "";
+    height: 50%;
+    background-size: 80%;
+    background-position: 40px 30px;
+  }
+}
+.section-container {
+  margin-top: 5em;
+}
+.section-container .section-info {
+  padding: 3em;
+  background-color: #fab131;
+}
+.section-container .section-info .section-title {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+}
+.section-container .section-info p {
+  padding-top: 3em;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  color: #343a40;
+}
+.section-container .section-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #343a40;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+}
+.section-container .section-box .section-box1 {
+  height: 300px;
+  background-color: #c7ddea;
+}
+.section-container .section-box .section-items {
+  text-align: center;
+  padding: 1.8em;
+  font-family: "Frank Ruhl Libre";
+  color: black;
+  font-size: 3rem;
+}
+.section-container .section-box .section-box2 {
+  height: 220px;
+  background-color: white;
+}
+.section-container .section-box .section-box3 {
+  height: 220px;
+  background-color: lightgrey;
+}
+.section-container .section-box .section-box4 {
+  height: 220px;
+  background-color: white;
+}
+.section-container .section-box .section-box5 {
+  height: 220px;
+  background-color: #f17949;
+}
+.section-container .section-box .section-box6 {
+  height: 200px;
+  background-color: white;
+}
+.section-container .section-box .box-number {
+  padding: 0.1em;
+  font-family: none;
+  font-size: 2em;
+  color: grey;
+  display: flex;
+  align-self: flex-start;
+}
+.section-container .section-box .box-items {
+  text-align: center;
+  padding: 2em 4em 2em 4em;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-container .section-info {
+    height: 950px;
+  }
+  .section-container .section-info .section-title {
+    padding-top: 8em;
+  }
+  .section-container .section-info .section-param,
+  .section-container .section-info .section-param2 {
+    padding-left: 30em;
+    padding-right: 30em;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .section-container .section-box {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section-container .section-box .section-box1,
+  .section-container .section-box .section-box2,
+  .section-container .section-box .section-box3,
+  .section-container .section-box .section-box4,
+  .section-container .section-box .section-box5,
+  .section-container .section-box .section-box6 {
+    height: 40vh;
+  }
+  .section-container .section-box .section-items {
+    padding: 3em;
+  }
+  .section-container .section-box .box-items {
+    padding: 6em 6em 0 6em;
+    text-align: center;
+  }
+}
+.footer-container {
+  height: 90px;
+  background-color: #696867;
+}
+.footer-container .footer-link {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    height: 33vh;
+  }
+  .footer-container .footer-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 8vh;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #696867;
+    font-family: "Fira Sans";
+    background-color: lightgrey;
+  }
+  .footer-container .footer-link p,
+  .footer-container .footer-link a {
+    align-self: center;
+    color: #696867;
+  }
+}
+.C-header-container {
+  height: 40vh;
+  background-color: #c7ddea;
+  display: flex;
+  justify-content: space-between;
+}
+.C-header-container .C-header-title {
+  align-self: center;
+  padding-left: 1em;
+  width: 30%;
+}
+
+@media screen and (min-width: 1024px) {
+  .C-header-container {
+    height: 30vh;
+  }
+  .C-header-container .C-header-title {
+    font-size: 3rem;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding: 2em;
+  }
+}
+.C-nav-container {
+  height: 18vh;
+}
+.C-nav-container .C-nav-title {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #a9a19e;
+  position: relative;
+}
+.C-nav-container .C-nav-title .C-home {
+  width: 3em;
+  position: absolute;
+  padding: 2em 6em;
+  top: 0;
+  right: 13em;
+}
+.C-nav-container .C-nav-title .C-our-offer {
+  width: 7em;
+  position: absolute;
+  padding: 2em 3em;
+  top: 0;
+  left: 13.5em;
+}
+.C-nav-container .C-nav-title .C-why-us {
+  position: absolute;
+  width: 7em;
+  padding: 2em 4em;
+  bottom: -9.2em;
+  right: 13em;
+}
+.C-nav-container .C-nav-title .C-contact {
+  position: absolute;
+  width: 7em;
+  padding: 2em 3em;
+  bottom: -9.2em;
+  left: 13.5em;
+}
+.C-nav-container .C-nav-title ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.C-nav-container .C-nav-title li {
+  display: inline-block;
+}
+.C-nav-container .C-nav-title a {
+  display: inline-block;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  color: #a9a19e;
+  text-decoration: none;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+.C-nav-container .C-nav-title a:hover {
+  color: black;
+  background-color: rgba(211, 211, 211, 0.315);
+}
+
+@media screen and (min-width: 1024px) {
+  .C-nav-container {
+    height: 9.1vh;
+  }
+  .C-nav-container .C-nav-title .C-home {
+    width: 10em;
+    position: absolute;
+    padding: 2em 5em;
+    top: 0;
+    right: 87em;
+  }
+  .C-nav-container .C-nav-title .C-our-offer {
+    width: 10em;
+    position: absolute;
+    padding: 2em 5em;
+    top: 0em;
+    left: 35em;
+  }
+  .C-nav-container .C-nav-title .C-why-us {
+    position: absolute;
+    width: 10em;
+    padding: 2em 5em;
+    bottom: -5.2em;
+    left: 60em;
+  }
+  .C-nav-container .C-nav-title .C-contact {
+    position: absolute;
+    width: 10em;
+    padding: 2em 5em;
+    bottom: -5.2em;
+    left: 85em;
+  }
+}
+.C-main-container {
+  background-color: #a9a19e;
+}
+
+.C-article-container {
+  padding: 3em 2em 0 2em;
+  height: 86vh;
+}
+.C-article-container .C-article-title {
+  font-family: "frank ruhl libre";
+  font-size: 4em;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .C-article-container {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    padding: 8em 15em 0em 15em;
+  }
+  .C-article-container .C-article-title {
+    font-size: 5rem;
+    padding-right: 3em;
+  }
+}
+.C-figure-container {
+  color: white;
+  font-family: "Fira sans";
+  font-size: 1.2rem;
+}
+.C-figure-container .email-container .C-email {
+  padding-top: 2em;
+}
+.C-figure-container .email-container .email-box {
+  margin: 2% 0 2% 0;
+  width: 44vh;
+  height: 7vh;
+  background-color: white;
+}
+.C-figure-container .message-container .message-box {
+  margin: 2% 0 3% 0;
+  width: 44vh;
+  height: 13vh;
+  background-color: white;
+}
+.C-figure-container .message-container .message-items {
+  font-size: 1rem;
+  padding: 1em;
+  color: #a9a19e;
+}
+.C-figure-container .C-button {
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+  margin-left: 52%;
+  height: 3em;
+  width: 9em;
+  border-radius: 20em;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.678);
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.C-figure-container .C-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+.C-figure-container .C-button-title {
+  text-decoration: none;
+  padding-left: 1.7em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+}
+.C-figure-container .C-button-title:hover {
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .C-figure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .C-figure-container .email-container .email-box {
+    width: 70vh;
+    height: 7vh;
+  }
+  .C-figure-container .message-container .message-box {
+    width: 70vh;
+    height: 17vh;
+  }
+  .C-figure-container .C-button {
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 53%;
+    width: 10em;
+  }
+  .C-figure-container .C-button .C-button-title {
+    padding-left: 2em;
+    font-size: 1.1rem;
+  }
+}
+.C-section-container {
+  position: absolute;
+  bottom: -55%;
+  margin-top: 15%;
+  width: 70%;
+  padding: 2em;
+  height: 12vh;
+  color: white;
+  background-color: #fab131;
+}
+.C-section-container .C-section-title {
+  font-family: "frank ruhl libre";
+  font-size: 2.2rem;
+}
+.C-section-container .C-section-items {
+  padding-top: 0.5em;
+  font-family: "Fira Sans";
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .C-section-container {
+    bottom: -75%;
+    left: 5%;
+    width: 30%;
+    height: 20vh;
+  }
+  .C-section-container .C-section-title {
+    font-size: 3.5rem;
+  }
+}
+.C-footer-container {
+  height: 25vh;
+  width: 100%;
+  overflow: hidden;
+}
+.C-footer-container .footer-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .C-footer-container {
+    height: 95vh;
+  }
+  .footer-img {
+    width: 100%;
+    height: 100vh;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

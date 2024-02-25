@@ -1,0 +1,44 @@
+.aside-container {
+  width: 100%;
+  .aside-top {
+    height: 40vh;
+    background-color: #f17949;
+  }
+
+  .aside-bottom {
+    height: 40vh;
+    background-color: #fab131;
+  }
+
+  .aside-param {
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+    font-size: 0.8rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(84, 84, 84);
+  }
+
+  .aside-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .aside-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+
+    .aside-top,
+    .aside-bottom {
+      height: 35.75vh;
+    }
+  }
+}

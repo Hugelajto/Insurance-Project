@@ -1,0 +1,32 @@
+.footer-container {
+  height: 90px;
+  background-color: #696867;
+
+  .footer-link {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    height: 33vh;
+
+    .footer-link {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 8vh;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #696867;
+      font-family: "Fira Sans";
+      background-color: lightgrey;
+
+      p,
+      a {
+        align-self: center;
+        color: #696867;
+      }
+    }
+  }
+}

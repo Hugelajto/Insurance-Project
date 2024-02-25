@@ -1,0 +1,34 @@
+.C-section-container {
+  position: absolute;
+  bottom: -55%;
+  margin-top: 15%;
+  width: 70%;
+  padding: 2em;
+  height: 12vh;
+  color: white;
+  background-color: #fab131;
+
+  .C-section-title {
+    font-family: "frank ruhl libre";
+    font-size: 2.2rem;
+  }
+
+  .C-section-items {
+    padding-top: 0.5em;
+    font-family: "Fira Sans";
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .C-section-container {
+    bottom: -75%;
+    left: 5%;
+    width: 30%;
+    height: 20vh;
+
+    .C-section-title {
+      font-size: 3.5rem;
+    }
+  }
+}

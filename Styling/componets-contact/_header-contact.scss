@@ -1,0 +1,27 @@
+.C-header-container {
+  height: 40vh;
+  background-color: #c7ddea;
+  display: flex;
+  justify-content: space-between;
+
+  .C-header-title {
+    align-self: center;
+    padding-left: 1em;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .C-header-container {
+    height: 30vh;
+
+    .C-header-title {
+      font-size: 3rem;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-self: flex-end;
+      padding: 2em;
+    }
+  }
+}

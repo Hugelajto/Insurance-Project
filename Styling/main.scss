@@ -1,0 +1,25 @@
+@import "componets/header";
+@import "componets/aside";
+@import "componets/navbar";
+@import "componets/maincontainer";
+@import "componets/article";
+@import "componets/figure";
+@import "componets/section";
+@import "componets/footer";
+@import "componets-contact/header-contact";
+@import "componets-contact/nav-contact";
+@import "componets-contact/main-contact";
+@import "componets-contact/article-contact";
+@import "componets-contact/figure-contact";
+@import "componets-contact/section-contact";
+@import "componets-contact/footer-contact";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+}
